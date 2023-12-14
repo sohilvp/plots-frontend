@@ -31,3 +31,29 @@
   font-size: 1rem;
   font-weight: 300;
 }
+
+@media screen and (max-width: 900px) {
+  .singlePostContainer {
+    overflow: hidden;
+
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .singlePostContainer {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+    width: 90%;
+    margin: 2rem auto 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  .singlePostContainer {
+    padding-top: 0;
+  }
+  .singlepostRight ul h3 {
+    font-size: 1.7rem;
+  }
+}

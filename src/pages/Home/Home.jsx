@@ -3,7 +3,7 @@ import SearchForm from "../../components/SearchForm/SearchForm";
 import List from "../../components/List/List";
 import FilterList from "../../components/filterList/FilterList";
 import { ContextPost } from "../../context/PostContext";
-
+import "./home.css";
 const Home = () => {
   const { posts } = useContext(ContextPost);
   const [allPost, setAllPost] = useState([]);
@@ -46,13 +46,15 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="homeContainer">
       <SearchForm
         handleButtonPurpose={handleButtonPurpose}
         setOnchange={setOnchange}
       />
-      <FilterList handleButtonCategory={handleButtonCategory} />
       <List filterPurpose={display} />
+      <div className="filterSection">
+        <FilterList handleButtonCategory={handleButtonCategory} />
+      </div>
     </div>
   );
 };

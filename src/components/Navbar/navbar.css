@@ -27,3 +27,18 @@
   color: white;
   cursor: pointer;
 }
+
+@media screen and (max-width: 720px) {
+  .navContainer {
+    padding: 0.3rem 1.5rem;
+  }
+  .navContainer .logo {
+    font-size: 1.2rem;
+  }
+  .navIcons {
+    font-size: 1.3rem;
+  }
+  .navlinks ul {
+    gap: 0 1rem;
+  }
+}

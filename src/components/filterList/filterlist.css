@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   margin-top: 2rem;
-
+  background: #e3e3e3;
   justify-content: center;
 }
 
@@ -30,4 +30,18 @@
 
 .icons {
   width: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  .filterListContainer .filterLists {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+  }
+  .filterLists li {
+    font-size: 0.5rem;
+  }
+  .icons {
+    width: 20px;
+  }
 }

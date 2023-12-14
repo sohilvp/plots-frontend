@@ -14,7 +14,7 @@
 }
 
 input[type="search"] {
-  width: 500px;
+  width: 30vw;
   height: 2.2rem;
   border-radius: 5px;
   outline: none;
@@ -52,6 +52,7 @@ input[type="search"] {
 
 .togglelist {
   position: absolute;
+  right: 38px;
   padding: 1rem;
   border: 1px solid black;
   z-index: 20;
@@ -61,4 +62,21 @@ input[type="search"] {
 
 .togglelist ul {
   list-style: none;
+}
+
+@media screen and (max-width: 720px) {
+  .searchFormContainer {
+    padding-top: 1rem;
+  }
+  input[type="search"] {
+    width: 70vw;
+  }
+
+  .searchFormContainer .topSection {
+    gap: 0.5rem;
+  }
+
+  .bottomSection {
+    gap: 1rem;
+  }
 }
