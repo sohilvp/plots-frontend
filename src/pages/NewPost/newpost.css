@@ -48,3 +48,16 @@ select {
   color: white;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 720px) {
+  .newPostContainer {
+    margin-bottom: 4rem;
+  }
+  .newPostContainer h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .inputfileds {
+    flex-direction: column;
+  }
+}
