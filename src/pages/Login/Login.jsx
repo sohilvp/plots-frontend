@@ -12,10 +12,13 @@ const Login = () => {
   const fetchUser = async (e) => {
     try {
       e.preventDefault();
-      const user = await axios.post("https://plots-nt5l.onrender.com/login", {
-        email: userRef.current.value,
-        password: passwordRef.current.value,
-      });
+      const user = await axios.post(
+        "https://plots-backend.onrender.com/login",
+        {
+          email: userRef.current.value,
+          password: passwordRef.current.value,
+        }
+      );
       setUser(user.data);
       console.log(user.status);
       if (user?.status === 200) {

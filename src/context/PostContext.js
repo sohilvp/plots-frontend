@@ -5,7 +5,7 @@ const PostContext = ({ children }) => {
   const [posts, setPosts] = useState([]);
 
   const fetchPost = async () => {
-    const allPost = await axios.get("https://plots-nt5l.onrender.com/posts");
+    const allPost = await axios.get("https://plots-backend.onrender.com/posts");
     setPosts(allPost.data);
   };
   useEffect(() => {

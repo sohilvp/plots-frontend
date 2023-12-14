@@ -11,7 +11,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://plots-nt5l.onrender.com/register",
+        "https://plots-backend.onrender.com/register",
         {
           username: userName,
           email,
