@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./register.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const createUser = async (e) => {
     e.preventDefault();
     try {
@@ -18,7 +19,9 @@ const Register = () => {
           password,
         }
       );
-      console.log(response?.status);
+      if (response?.status === 201) {
+        navigate("/");
+      }
     } catch (err) {
       console.log(err);
     }
@@ -47,7 +50,7 @@ const Register = () => {
           placeholder="Password"
         />
 
-        <input type="submit" />
+        <input type="submit" value={"Register"} />
       </div>
     </form>
   );

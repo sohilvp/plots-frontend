@@ -37,7 +37,7 @@ const Login = () => {
       <p>
         New user ?<Link to="/register"> Create account</Link>
       </p>
-      <input type="submit" />
+      <input type="submit" value={"Login"} />
     </form>
   );
 };
