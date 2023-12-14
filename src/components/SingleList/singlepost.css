@@ -1,0 +1,33 @@
+.singlePostContainer {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+  width: 70%;
+  margin: 2rem auto 0;
+  background: #cacae8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.singlePostContainer .singlepostLeft img {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.singlepostRight ul {
+  list-style: none;
+}
+
+.singlepostRight ul h3 {
+  font-size: 2rem;
+}
+
+.singlepostRight ul h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}

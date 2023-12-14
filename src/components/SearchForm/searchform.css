@@ -1,0 +1,64 @@
+.searchFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  min-height: 30vh;
+}
+
+.searchFormContainer .topSection {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="search"] {
+  width: 500px;
+  height: 2.2rem;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.bottomSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dropArrow {
+  font-size: 2rem;
+  font-weight: 100;
+  position: relative;
+  cursor: pointer;
+}
+
+.buttons {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background: #9c94ca;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.null {
+  position: absolute;
+  display: none;
+}
+
+.togglelist {
+  position: absolute;
+  padding: 1rem;
+  border: 1px solid black;
+  z-index: 20;
+  background: #bbb6d8;
+  border-radius: 5px;
+}
+
+.togglelist ul {
+  list-style: none;
+}

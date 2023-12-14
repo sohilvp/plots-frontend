@@ -1,0 +1,43 @@
+.register_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register_container input {
+  padding: 1.2em;
+  background: #e3e3e3;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+.register_container h1 {
+  text-align: center;
+  margin: 1.5em 0;
+  font-family: "Martian Mono", monospace;
+}
+
+.register_right {
+  width: 400px;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+
+.register_container .register_right input:last-child {
+  width: 35%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #93ef83;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1em;
+  color: black;
+  cursor: pointer;
+  min-width: 100px;
+}

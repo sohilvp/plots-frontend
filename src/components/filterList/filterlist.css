@@ -1,0 +1,33 @@
+.filterListContainer {
+  border-top: 1px solid black;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
+  justify-content: center;
+}
+
+.filterListContainer .filterLists {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.filterListContainer .filterLists ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filterLists li {
+  cursor: pointer;
+}
+
+.icons {
+  width: 40px;
+}

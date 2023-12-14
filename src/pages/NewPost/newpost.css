@@ -1,0 +1,50 @@
+.newPostContainer h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.formcontainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+.formcontainer input {
+  padding: 0.8em;
+  background: #e3e3e3;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  min-width: 230px;
+  display: block;
+}
+.formcontainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.inputfileds {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+select {
+  background-color: #e3e3e3;
+  border-radius: 2px;
+  border: none;
+  color: #000;
+  padding: 10px 30px 10px 10px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.createButton {
+  height: 3rem;
+  background: #005ca8;
+  color: white;
+  text-transform: uppercase;
+}
