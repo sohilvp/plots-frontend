@@ -12,7 +12,7 @@ const Login = () => {
   const fetchUser = async (e) => {
     try {
       e.preventDefault();
-      const user = await axios.post("http://localhost:4000/login", {
+      const user = await axios.post("https://plots-nt5l.onrender.com/login", {
         email: userRef.current.value,
         password: passwordRef.current.value,
       });

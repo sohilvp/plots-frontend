@@ -10,11 +10,14 @@ const Register = () => {
   const createUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:4000/register", {
-        username: userName,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://plots-nt5l.onrender.com/register",
+        {
+          username: userName,
+          email,
+          password,
+        }
+      );
       console.log(response?.status);
     } catch (err) {
       console.log(err);

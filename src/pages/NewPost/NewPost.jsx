@@ -26,7 +26,7 @@ const NewPost = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/createpost",
+        "https://plots-nt5l.onrender.com/createpost",
         {
           photo: file,
           description,
